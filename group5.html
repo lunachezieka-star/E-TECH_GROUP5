@@ -1,1 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Group 5</title>
 
+<style>
+
+body{
+margin:0;
+font-family:'Poppins', sans-serif;
+background: linear-gradient(120deg,#ffe066,#bde0fe,#caffbf,#ffc6ff,#ffd6a5);
+text-align:center;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+padding:40px;
+color:#333;
+}
+
+header h1{
+font-size:42px;
+}
+
+/* FLOATING MEMORY ORBS */
+
+.orb{
+position:fixed;
+border-radius:50%;
+opacity:0.4;
+animation: float 8s infinite ease-in-out;
+}
+
+.o1{width:70px;height:70px;background:#ffd93d;left:10%;top:80%;}
+.o2{width:60px;height:60px;background:#4da6ff;left:85%;top:60%;}
+.o3{width:80px;height:80px;background:#ff6b6b;left:20%;top:40%;}
+.o4{width:60px;height:60px;background:#6bcf63;left:70%;top:30%;}
+.o5{width:50px;height:50px;background:#7de3ff;left:50%;top:85%;}
+.o6{width:65px;height:65px;background:#ff9f68;left:40%;top:20%;}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-40px);}
+100%{transform:translateY(0);}
+}
+
+/* TEAM GRID */
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:40px;
+}
+
+/* CARD STYLE */
+
+.card{
+width:220px;
+background:white;
+padding:25px;
+border-radius:25px;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 15px 25px rgba(0,0,0,0.25);
+}
+
+/* PROFILE IMAGE */
+
+.card img{
+width:110px;
+border-radius:50%;
+margin-bottom:10px;
+}
+
+/* BUTTON */
+
+button{
+border:none;
+padding:10px 18px;
+border-radius:20px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+margin-top:10px;
+}
+
+/* EMOTION COLORS */
+
+.joy{border-top:8px solid #ffd93d;}
+.joy button{background:#ffd93d;}
+
+.sadness{border-top:8px solid #4da6ff;}
+.sadness button{background:#4da6ff;}
+
+.anger{border-top:8px solid #ff4d4d;}
+.anger button{background:#ff4d4d;}
+
+.disgust{border-top:8px solid #6bcf63;}
+.disgust button{background:#6bcf63;}
+
+.envy{border-top:8px solid #7de3ff;}
+.envy button{background:#7de3ff;}
+
+.anxiety{border-top:8px solid #ff9f68;}
+.anxiety button{background:#ff9f68;}
+
+/* FOOTER */
+
+footer{
+background:#6fbaff;
+color:white;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MEMORY ORBS -->
+<div class="orb o1"></div>
+<div class="orb o2"></div>
+<div class="orb o3"></div>
+<div class="orb o4"></div>
+<div class="orb o5"></div>
+<div class="orb o6"></div>
+
+<header>
+<h1>🌈 ?!NEW EMOTIONS!?</h1>
+<p>Meet our emotions and explore our creative e-portfolios!</p>
+</header>
+
+<div class="container">
+
+<div class="card joy">
+<img src="https://i.pinimg.com/736x/32/87/dc/3287dc84d5dc043716e4c98e0bcc9d5d.jpg">
+<h3>Joy</h3>
+<p></p>
+<a href="#"><button>View</button></a>
+</div>
+
+<div class="card sadness">
+<img src="https://i.pinimg.com/736x/4d/b4/bf/4db4bf66786dc56c7f7220cac1069abb.jpg">
+<h3>Sadness</h3>
+<p>Member Name</p>
+<a href="#"><button>View</button></a>
+</div>
+
+<div class="card anger">
+<img src="https://i.pinimg.com/1200x/c7/09/24/c709245d19fa5bffaece8f58fb6bb7c2.jpg">
+<h3>Anger</h3>
+<p>Member Name</p>
+<a href="#"><button>View</button></a>
+</div>
+
+<div class="card disgust">
+<img src="https://i.pinimg.com/736x/98/07/9a/98079a1ace807a8b8c9caf8ae54f12e0.jpg">
+<h3>Disgust</h3>
+<p>Member Name</p>
+<a href="#"><button>View</button></a>
+</div>
+
+<div class="card envy">
+<img src="https://i.pinimg.com/736x/e1/10/e5/e110e5ec6ab74d0c74928e4ffad2f5e5.jpg">
+<h3>Envy</h3>
+<p>Member Name</p>
+<a href="#"><button>View</button></a>
+</div>
+
+<div class="card anxiety">
+<img src="https://i.pinimg.com/736x/75/62/3c/75623c5cdd3ba8840357763aeb4e5312.jpg">
+<h3>Anxiety</h3>
+<p>Member Name</p>
+<a href="#"><button>View</button></a>
+</div>
+
+</div>
+
+<footer>
+Inside Out | Group 5 Compilation
+</footer>
+
+</body>
+</html>
